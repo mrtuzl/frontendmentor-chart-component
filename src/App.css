@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: hsl(27, 66%, 92%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.container .first-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 100px;
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.container .first-box span {
+  font-size: 0.8rem;
+  padding-left: 5px;
+}
+.container .first-box h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 5px;
+}
+.container .first-box img {
+  width: 80%;
+}
+.container .second-box {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 450px;
+  background-color: hsl(33, 100%, 98%);
+  color: hsl(25, 47%, 15%);
+  border-radius: 10px;
+  padding: 20px;
+}
+.container .second-box h1 {
+  font-size: 1.5rem;
+  padding-left: 5px;
+}
+.container .second-box .chart {
+  padding-right: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container .second-box .hr {
+  width: 100%;
+  margin-bottom: 20px;
+  opacity: 0.4;
+}
+.container .second-box .bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: hsl(28, 10%, 53%);
+  margin-bottom: 30px;
+}
+.container .second-box .bottom span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.container .second-box .bottom .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+.container .second-box .bottom .right span:first-child {
+  margin-left: 60px;
+  font-weight: bolder;
+  color: hsl(25, 47%, 15%);
+}
+.container .second-box .bottom .left {
+  padding-left: 5px;
+}
+.container .second-box .bottom .left h1 {
+  font-size: 2rem;
+  color: hsl(25, 47%, 15%);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 500px) {
+  .container .first-box {
+    width: 350px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .container .second-box {
+    width: 350px !important;
   }
-}
+  .container .second-box .chart {
+    width: 100%;
+  }
+}/*# sourceMappingURL=App.css.map */

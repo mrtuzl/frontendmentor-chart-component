@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+$myfont: 'DM Sans', sans-serif;
+$softred: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$dbrown: hsl(25, 47%, 15%);
+$mbrown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$vporange: hsl(33, 100%, 98%);
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    font-family: $myfont;
+}
+
+body{
+    background-color: $cream;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+      .first-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        height: 100px;
+        background-color: $softred;
+        color: $vporange;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        span{
+            font-size: 0.8rem;
+            padding-left: 5px;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding-left: 5px;
+        }
+        img{
+            width: 80%;
+        }
+    }
+    .second-box{
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        width: 450px;
+        
+        background-color: $vporange;
+        color: $dbrown;
+        border-radius: 10px;
+        padding: 20px;
+        h1{
+            font-size: 1.5rem;
+            padding-left: 5px;
+          
+        }
+        
+        .chart{
+            padding-right: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .hr{
+            width: 100%;
+            margin-bottom: 20px;
+            opacity: 0.4;
+        }
+        .bottom {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            color: $mbrown;
+            margin-bottom: 30px;
+            span{
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-right: 5px;
+                span:first-child{
+                    margin-left: 60px;
+                    font-weight: bolder;
+                    color: $dbrown;
+                }
+            }
+            .left{
+                padding-left: 5px;
+                
+                h1{
+                    font-size: 2rem;
+                    color: $dbrown;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px ){
+    .container{
+        .first-box{
+            width: 350px !important;
+        }
+        .second-box{
+            width: 350px !important;
+            .chart{
+                width: 100%;
+            }
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
