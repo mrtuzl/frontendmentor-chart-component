@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/frontendmentor-chart-component/static/css/main.8fbfd6ce.css",
+    "main.js": "/frontendmentor-chart-component/static/js/main.112264d3.js",
+    "static/js/787.5a42d32c.chunk.js": "/frontendmentor-chart-component/static/js/787.5a42d32c.chunk.js",
+    "index.html": "/frontendmentor-chart-component/index.html",
+    "static/media/logo.svg": "/frontendmentor-chart-component/static/media/logo.99d5b9138a1a64cc6858cdac9a9d3bd4.svg",
+    "main.8fbfd6ce.css.map": "/frontendmentor-chart-component/static/css/main.8fbfd6ce.css.map",
+    "main.112264d3.js.map": "/frontendmentor-chart-component/static/js/main.112264d3.js.map",
+    "787.5a42d32c.chunk.js.map": "/frontendmentor-chart-component/static/js/787.5a42d32c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fbfd6ce.css",
+    "static/js/main.112264d3.js"
+  ]
+}
